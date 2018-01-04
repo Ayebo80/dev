@@ -1,0 +1,117 @@
+https://www.dropbox.com/sh/pxn8os58g00filr/AACiSFGE52JTiyIp4_beeSvYa/full_code/ng-cribs?dl=0
+
+AngularJS Tutorial: [#1] Welcome! - Getting Started with AngularJS
+single page webapplications
+Angular1, only Front-End, no Database
+AngularJS Tutorial: [#2] Installation and Set Up - Getting Started with AngularJS
+WHAT WE NEED:
+I) Text Editor (www.sublimetext.com)
+II) Local Web Server 
+(on Windows: www.wampserver.com/en (Windows,Apache,MySQL,PHP)
+(on Windows/Linux: www.apachefriends.org/index.html) (Apache,MariaDB,PHP,Perl)
+XAMPP: “Important! Because an activated User Account Control (UAC) on your system some functions of XAMPP are 
+possibly restricted. 
+With UAC please avoid to intall XAMPP to C:\Program Files (missing write permissions). 
+Or deactivate UAC with msconfig after this setup.”
+http://www.zeeronsolutions.com/installing-xampp-on-windows-7-user-account-control-uac-warning-message/
+Advice No.1
+Instead you should install XAMPP directly on a Drive. (i.e. like C:\ or D:\).
+=> C:\xampp
+Advice No.2
+The second advice that was given was to disable the function of “User Account Control (UAC)” on Windows 7. 
+However they have warned us that “Disabling UAC will lead to a less secure system”. So we have been warned!
+How To Disable User Account Control (UAC) on Windows 7?
+According to the instruction they had given I simply went to
+    Start Menu –> Control Panel–> In the Control Panel search box just type User Account Control.
+    Then you will get the results among which I found;
+    “Change User Account Control Settings”
+    In this User Account Control Settings Form you will find a slider that controls the level of notification 
+messages you 
+want when changes are done to your computer.
+If you drag the slider all the way down to the bottom, you’ll have disabled it entirely. 
+In my case the slider was at the level above disabling, which is, “Notify me only when programs try to make changes
+ to my computer”.
+---------------------------------------------------------------------------------------------------------------------------
+[TOMCAT] Port 8080 in use by ""C:\Program Files\Atlassian\JIRA\bin\tomcat8.exe.x64" //RS//JIRASoftware161217221419"!
+[TOMCAT] or reconfigure Tomcat and the Control Panel to listen on a different port
+=> XAMPP Control Panel => Config => Service and Port Settings => Tomcat: Change Port 8080 to 8888 & Port 8005 to 8885
+[Apache] Error: Apache shutdown unexpectedly.
+[Apache] This may be due to a blocked port, missing dependencies, 
+[Apache] improper privileges, a crash, or a shutdown by another method.
+=> Open IIS and click on STOP
+---------------------------------------------------------------------------------------------------------------------------
+Create folder ng-cribs at C:\xampp\htdocs & then drag&drop folder into sublime text
+Create 2 files index.html & apps.js in the folder ng-cribs
+III) AngularJS (angularjs.org)
+IV) Bootstrap (Styling the application) (getbootstrap.com/getting-started/#download)
+V) package UI Bootstrap (regular Bootstrap FW but customized for AngularJS) (cdnjs.com/libraries/angular-ui-bootstrap)
+
+
+===========================================================================================================================
+AngularJS Tutorial: [#3] Controllers and Views - Getting Started with AngularJS
+In this part we See how we can use JSON data in application & use some of Angulars Features to display data on screen
+I) MVC(Model-View-Controller): usefull if applications grows & more people work on it
+Model: Database Communication
+View: Content Displayed on the Screen
+Controller: Ties the Model and View Together
+II) ANGULAR MVC-approach, but little different:
+Model: are Properties of Scope
+View: HTML Template rendered for User to see
+Controller: contains Business Logic for App
+III) SCOPE: 
++ its an object that ties Controller & View together
++ on Scope you can keep Properties and Functions that can be used by the View
+IV) Two-Way Data Binding:
++ 1 Single Source of Truth
++ Changes Reflected Automatically Everywhere
+=>EXAMPLE: Text-Element on Page & Input was bound to that Text-Element, whenever you make change in Input it will reflected
+automatically on the Text-Element
++ App Data Stays in Sync
+===========================================================================================================================
+AngularJS Tutorial: [#4] Switching to Services - Getting Started with AngularJS
+cribsController.js:
+Extract Data from Controller to Factory/Service
+In Controller should be Business-Logic, Controller should be as thin as possible
+Code in Facotry/Service can be used in more then 1 controller
+===========================================================================================================================
+AngularJS Tutorial: [#5] HTTP - Getting Started with AngularJS
+AngularJS is Front-End Only, NO Back-End (Database, Scripting-Language on Server)
+If we want to interact with data from a server, we have to expose an HTTP-Server that serves up our data!!!
+1) $http (HTTP-Service) serves up data
+METHODS:
+POST
+GET
+PUT
+DELETE
+Another way to do HTTP-Request with Angular: resource is designed to work with RESTfull API. 
++ It gives us methods like query, save & remove. 
++ Its an abstraction over HTTP-Service (HTTP Lower Level Service).
+===========================================================================================================================
+AngularJS Tutorial: [#6] Creating the User Interface - Getting Started with AngularJS
+Angular Build-In Directives for The User Interface:
+ng-click		
+ng-show / ng-hide	
+ng-model	#allows 2-way-data-binding
+ng-src	#instead of source; page looks for image {{crib.image}}.jpg: ng-src displays picture only after compilation
+===========================================================================================================================
+AngularJS Tutorial: [#7] Custom Filters - Getting Started with AngularJS
+Custom Filters: Bsp to set Min/Max-Values
+===========================================================================================================================
+AngularJS Tutorial: [#8] Creating New Data - Getting Started with AngularJS
+ng-if #difference to ng-show: false:removes DOM element that its placed on / true:insert DOM element / standard: == true
+===========================================================================================================================
+AngularJS Tutorial: [#9] Editing and Deleting Data - Getting Started with AngularJS
+CRUD: Create,Read,Update,Delete
+===========================================================================================================================
+AngularJS Tutorial: [#10] Thanks for Watching! - Getting Started with AngularJS
+MVC
+Scope
+Controllers
+Services
+$HTTP
+Two-Way Databinding
+Directives(ng-repeat, ng-show)
+
+Front-End Focus
+
+
