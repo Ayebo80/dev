@@ -1,0 +1,56 @@
+https://www.dropbox.com/sh/cing52gbww3aaxr/AAA6YPbgzZ3GDHAAtZkBgxMoa?dl=0
+http://localhost/dev/ng2-cribs/
+
+1)What We'll Build
+Features of Angular2:
++ Repeater(ng-repeat): Very common in Single-Page-Apps: Takes a list of data & provides a single template for it & display data on screen
++ Forms
++ Pipes
++ HTTP-Implementation
++ Components, Services
++ TypeScript: Language Angular2 is written in
++ Observables
+===========================================================================================================================================
+2) Just Enough TypeScript
+- Not strongly typed: There is no way to define the type (string, array...) of a variable and arguments/return of function
+
+===========================================================================================================================================
+3) Using the Angular CLI
+Modern IS2015/2016 of JS and TS:
+import
+Decorators (@NgModule)
+class
+=> TypeScript is super-set of IS2015/2016
+
+Angular is component-driven. Components have own TS-file & have template or view associated with it.
+Angular has to has at least 1 module (root-module which bootstraps(=gets the application going))
+Declare module for application: @NgModule-Decorator
+
+Decorators (@NgModule):
++ give us a way to modify the behaviour of a class or a property.
++ classes: add meta-data to classes
+
+# Angular CLI (https://cli.angular.io/)
+$ npm install -g @angular/cli
+
+$ cd C:\xampp\htdocs\dev\ng2-cribs\src\app
+$ ng g component crib-listing   #g: generate
+
+# ERROR: node_modules appears empty, you may need to run 'npm install'
+$ cd C:\Users\maurerpa-Admin\AppData\Roaming
+$ npm install
+
+
+===========================================================================================================================================
+4) Anatomy of an Angular 2+ App
+
+
+===========================================================================================================================================
+5) 
+
+
+===========================================================================================================================================
+6) 
+
+
+===========================================================================================================================================

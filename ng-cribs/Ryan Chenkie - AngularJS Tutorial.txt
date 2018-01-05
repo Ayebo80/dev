@@ -39,6 +39,9 @@ In my case the slider was at the level above disabling, which is, “Notify me onl
 [Apache] This may be due to a blocked port, missing dependencies, 
 [Apache] improper privileges, a crash, or a shutdown by another method.
 => Open IIS and click on STOP
+
+Stop & Deactivate Services "World Wide Web Publishing Service (WWW-Publishing Service)", "Web Deployment Agent Service" and all MSSQLSERVER Services
+
 ---------------------------------------------------------------------------------------------------------------------------
 Create folder ng-cribs at C:\xampp\htdocs & then drag&drop folder into sublime text
 Create 2 files index.html & apps.js in the folder ng-cribs
