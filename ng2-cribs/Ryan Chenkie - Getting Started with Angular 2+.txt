@@ -10,6 +10,7 @@ Features of Angular2:
 + Components, Services
 + TypeScript: Language Angular2 is written in
 + Observables
+
 ===========================================================================================================================================
 2) Just Enough TypeScript
 - Not strongly typed: There is no way to define the type (string, array...) of a variable and arguments/return of function
@@ -30,20 +31,22 @@ Decorators (@NgModule):
 + give us a way to modify the behaviour of a class or a property.
 + classes: add meta-data to classes
 
-# Angular CLI (https://cli.angular.io/)
-$ npm install -g @angular/cli
-
-$ cd C:\xampp\htdocs\dev\ng2-cribs\src\app
-$ ng g component crib-listing   #g: generate
-
-# ERROR: node_modules appears empty, you may need to run 'npm install'
-$ cd C:\Users\maurerpa-Admin\AppData\Roaming
-$ npm install
-
-
 ===========================================================================================================================================
 4) Anatomy of an Angular 2+ App
-
+HOW TO SETUP ANATOMY of Angular2+ App:
+# Change into Webserver-Directory
+cd C:\xampp\htdocs\dev\
+# Install AngularCLI (https://cli.angular.io/) globally:
+npm install -g @angular/cli
+# ng new: The Angular CLI makes it easy to create an application that already works, right out of the box. 
+# It already follows our best practices!:
+ng new ng2-cribs
+# Change to directory:
+cd ng2-cribs
+[# ng serve: Easily test your app locally while developing.:]
+[ng serve]
+# ng g(generate) component:
+ng g component crib-listing
 
 ===========================================================================================================================================
 5) 
