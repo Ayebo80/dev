@@ -49,11 +49,40 @@ cd ng2-cribs
 ng g component crib-listing
 
 ===========================================================================================================================================
-5) 
+5) Repeating Over Data with ngFor
+https://github.com/chenkie/ng2-cribs
+# Change into ng2-cribs Directory
+cd C:\xampp\htdocs\dev\ng2-cribs
+# Easily test your app locally while developing.
+ng serve
+# WICHTIG: Nach jeder Datei-Änderung wird der Code neu gecheckt und auf Webserver deployed!
 
+#Get BOOTSTRAP (https://getbootstrap.com/getting-started)
+# Change into ng2-cribs Directory
+cd C:\xampp\htdocs\dev\ng2-cribs
+# Install BOOTSTRAP (--save: Save to package.json)
+npm install bootstrap --save
+# Register BOOTSTRAP in the angular-cli.json
+      "styles": [
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css"
+      ],
+# Kill above ng serve process by CTRL+C & start new ng serve to see the BOOTSTRAP changes
+ng serve
 
 ===========================================================================================================================================
-6) 
+6) Improving the Display with Bootstrap
+VSCode Shortcuts:
+//nav.navbar.navbar-default 	=> <nav class="navbar navbar-default"></nav>
+//div.container-fluid		=> <div class="container-fluid"></div>
+//.container 			=> <div class="container"></div>
+//class="col-sm-4": Class commes with BOOTSTRAP, take up a 1/3 of total 12 column spaces accross page
+//.thumbnail			=> <div class="thumbnail"></div>
+//img				=> <img src="" alt="">
 
+PIPES:
+{{ crib.price | currency:'USD':true }}
+| json
 
 ===========================================================================================================================================
+7) Reusable Components
