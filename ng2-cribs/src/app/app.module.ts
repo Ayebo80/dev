@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CribListingComponent } from './crib-listing/crib-listing.component';
+import { CribCardComponent } from './crib-card/crib-card.component';
 //import { CribCardComponent } from './crib-card/crib-card.component';
 //import { AddListingFormComponent } from './add-listing-form/add-listing-form.component';
 
@@ -20,7 +21,8 @@ import { CribListingComponent } from './crib-listing/crib-listing.component';
   // declarations: 
   declarations: [
     AppComponent,
-    CribListingComponent
+    CribListingComponent,
+    CribCardComponent
   ],
   // imports: import & make use of Modules Angular provides
   imports: [

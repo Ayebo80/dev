@@ -1,4 +1,7 @@
-export const cribs = [
+// Interface: a class that describe how something should be shaped (what kind of keys & values it should contain)
+// Umwandlung ovn TS zu JSON: Auskommentieren von: export const cribs = 
+// When you use HTTP to get data from server you generally get data back in JSON-Format
+[
     {
       "id": 1,
       "type": "Condo",
@@ -65,4 +68,4 @@ export const cribs = [
       "area": 1788,
       "image":"crib-6"
     }
-  ]
+]

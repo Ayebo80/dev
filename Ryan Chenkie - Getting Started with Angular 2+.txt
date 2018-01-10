@@ -55,7 +55,8 @@ https://github.com/chenkie/ng2-cribs
 cd C:\xampp\htdocs\dev\ng2-cribs
 # Easily test your app locally while developing.
 ng serve
-# WICHTIG: Nach jeder Datei-Änderung wird der Code neu gecheckt und auf Webserver deployed!
+# WICHTIG: Nach jeder Datei-Änderung wird der Code neu gecheckt und auf Webserver unter http://localhost:4200/ deployed!
+# Im Browser aufrufen: http://localhost:4200/
 
 #Get BOOTSTRAP (https://getbootstrap.com/getting-started)
 # Change into ng2-cribs Directory
@@ -69,6 +70,7 @@ npm install bootstrap --save
       ],
 # Kill above ng serve process by CTRL+C & start new ng serve to see the BOOTSTRAP changes
 ng serve
+# Im Browser aufrufen: http://localhost:4200/
 
 ===========================================================================================================================================
 6) Improving the Display with Bootstrap
@@ -86,3 +88,19 @@ PIPES:
 
 ===========================================================================================================================================
 7) Reusable Components
+# ng g(generate) component:
+ng g component crib-card
+
+# Property Binding: mechanism that lets you pass data to into Components (ng g component)
+
+===========================================================================================================================================
+8) Implementing an Interface
+# Interface: a class that describe how something should be shaped (what kind of keys & values it should contain)
+ng g interface crib
+
+===========================================================================================================================================
+9) Switching to Http
+# In Real-World you get Data with HTTP-Request for the data when App starts or Component is initialized
+# move /data-Folder 1 Level up & rename cribs.ts to cribs.json
+
+BIS 5:39
