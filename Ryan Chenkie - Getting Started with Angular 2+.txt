@@ -98,9 +98,31 @@ ng g component crib-card
 # Interface: a class that describe how something should be shaped (what kind of keys & values it should contain)
 ng g interface crib
 
+// Umwandlung von TS zu JSON: Auskommentieren von: export const cribs = 
+// When you use HTTP to get data from server you generally get data back in JSON-Format
+
 ===========================================================================================================================================
 9) Switching to Http
 # In Real-World you get Data with HTTP-Request for the data when App starts or Component is initialized
 # move /data-Folder 1 Level up & rename cribs.ts to cribs.json
+ERROR: GET http://localhost:4200/data/cribs.json 404 (Not Found)?
+Ciro infante vor 7 Monaten
+Have a problem with get call. the browser put out this error: zone.js:2224 GET http://localhost:4200/data/cribs.json 404 (Not Found)?
+Ryan Chenkie vor 7 Monaten
+Hey there, can you try adding 'data' to your 'assets' array in the .angular-cli.json file? That requirement came up in newer versions of the CLI. Do a fresh ng serve afterward. 
+See here: https://github.com/chenkie/ng2-cribs/blob/master/.angular-cli.json#L13?
 
-BIS 5:39
+SERVICES have a lot of advantages: 1. they are reusable
+Create folder /src/app/services
+cd C:\xampp\htdocs\dev\ng2-cribs\src\app\services
+ng g service cribs
+SERVICE is generated but not provided, it must be provided to be used:
+1. Open /src/app/app.module.ts
+2. 
+===========================================================================================================================================
+10) Setting up the Form Template
+ng g component add-listing-form
+cd C:\xampp\htdocs\dev\ng2-cribs
+ng g component add-listing-form
+BIS 8:16
+

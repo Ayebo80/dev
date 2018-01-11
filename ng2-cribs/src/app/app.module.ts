@@ -7,10 +7,10 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { CribListingComponent } from './crib-listing/crib-listing.component';
 import { CribCardComponent } from './crib-card/crib-card.component';
-//import { CribCardComponent } from './crib-card/crib-card.component';
-//import { AddListingFormComponent } from './add-listing-form/add-listing-form.component';
 
-//import { CribsService } from './services/cribs.service';
+// After creating a Service register it here!!! SERVICE is generated but not provided, it must be provided to be used:
+import { CribsService } from './services/cribs.service';
+import { AddListingFormComponent } from './add-listing-form/add-listing-form.component';
 //import { UtilService } from './services/util.service';
 //import { SortByPipe } from './pipes/sort-by.pipe';
 
@@ -22,7 +22,8 @@ import { CribCardComponent } from './crib-card/crib-card.component';
   declarations: [
     AppComponent,
     CribListingComponent,
-    CribCardComponent
+    CribCardComponent,
+    AddListingFormComponent
   ],
   // imports: import & make use of Modules Angular provides
   imports: [
@@ -31,7 +32,8 @@ import { CribCardComponent } from './crib-card/crib-card.component';
     HttpModule
   ],
   // providers: register Injectible Services we created
-  providers: [],
+    // After creating a Service register it here!!! SERVICE is generated but not provided, it must be provided to be used:
+  providers: [CribsService],
   // bootstrap: tell module what to bootstrap (which component is top-level component)
   bootstrap: [AppComponent]
 })
