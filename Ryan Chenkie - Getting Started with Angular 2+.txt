@@ -117,12 +117,48 @@ Create folder /src/app/services
 cd C:\xampp\htdocs\dev\ng2-cribs\src\app\services
 ng g service cribs
 SERVICE is generated but not provided, it must be provided to be used:
-1. Open /src/app/app.module.ts
-2. 
+
 ===========================================================================================================================================
 10) Setting up the Form Template
+    // make an http request (asynchronouse operation: we know that response comes back, but we don't know WHEN, so we can do other things in App untill response )
+    // 1. Handle asynchronous operations with Callbacks:
+    // this.http.get('data/cribs.json', function(err, data))
+    // 2. Handle asynchronous operations with Promises:
+    // this.http.get('data/cribs.json').then(data)
+    // 3. Handle asynchronous operations with Observables
+    // ( more powerfull then Callbacks & Promises, handle values over course of time ):
+    // .subscribe: Angulars HTTP Request gives us an Observable back, we can Subscribe to the result of the HTTP Request
+    // this.http.get('data/cribs.json').subscribe
+
 ng g component add-listing-form
 cd C:\xampp\htdocs\dev\ng2-cribs
 ng g component add-listing-form
-BIS 8:16
+ng serve
 
+===========================================================================================================================================
+11) Communicating Between Components
+// crib.service.ts facilitates communication between crib-listing.component.ts & add-listing-form.component.ts
+
+===========================================================================================================================================
+12) Wrapping Up
+CORE ANGULAR TOPICS to go deeper into
+TypeScript in Depth
+Angular Templates
+Directives and Bindings
+Observables with RxJS
+Testing
+
+BEYOND ANGULAR
+Backend/Server Side
+Databases
+Ionic	#Mobile/Desktop Development
+Electron	#Mobile/Desktop Development
+
+LEARNING RESOURCES
+Official Angular Docs
+angular.io
+
+Ryan Chenkies Site
+angularcasts.io
+
+===========================================================================================================================================

@@ -52,6 +52,14 @@ export class CribListingComponent implements OnInit {
         data => this.cribs = data,
         error => this.error = error.statusText
       );
+
+    this.cribsService.newCribSubject.subscribe(
+      //data => console.log(data)
+        //Push: Put at end of array
+      //data => this.cribs.push(data)
+        //Spread(...): Take each Element out of old array & place it(spread) in new array
+      data => this.cribs = [data, ...this.cribs]
+    )
   }
 
 }
